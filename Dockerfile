@@ -3,7 +3,7 @@ FROM centos:6.7
 MAINTAINER kwangho "kwangho741@gmail.com"
 
 # install prerequisite
-RUN yum update -y
+RUN yum clean all
 RUN yum install -y automake libtool flex bison pkgconfig gcc-c++ boost-devel libevent-devel zliyub-devel python-devel ruby-devel openssl-devel wget make git tar
 
 # install thrift
